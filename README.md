@@ -1,1 +1,7 @@
-# Implementation of UMons' network project of 2020 (master's in computer sciences)
+# Projet Réseaux : simulation d'un protocle de routage à vecteur de distances
+Master en sciences informatiques. 
+UMons, Charleroi
+
+Par 
+Abdelkrim ESSAFSYFY ;
+Paul ONDAFE MATOCK.
