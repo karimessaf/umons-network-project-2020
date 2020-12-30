@@ -1,0 +1,72 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsfonts, amsmath, amssymb}
+\usepackage[none]{hyphenat}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[nottoc, notlot, notlof]{tocbibind}
+\usepackage{hyperref}
+\usepackage[french]{babel}
+
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+%\fancyhead[L]{\slshape \MakeUppercase{Radio}}
+\fancyhead[R]{\slshape Projet Réseaux}
+\fancyfoot[C]{\thepage}
+\renewcommand{\footrulewidth}{0pt}
+
+\parindent 0ex %
+\renewcommand{\baselinestretch}{1.5}
+
+\begin{document}
+
+\begin{titlepage}
+\begin{center}
+\vspace*{1cm}
+\Large{\textbf{Projet Réseaux}}\\
+\vfill
+\line(1,0){400}\\[1mm]
+\huge{\textbf{Simulation d'un protocole de routage à vecteur de distances}}\\[3mm]
+\Large{\textbf{- Rapport -}}\\[1mm]
+\line(1,0){400}\\
+\vfill
+Abdelkrim ESSAFSYFY\\
+Paul ONDAFE MATOCK\\
+Année académique 2020-2021
+\end{center}
+\end{titlepage}
+
+\tableofcontents
+\thispagestyle{empty}
+\clearpage
+\setcounter{page}{1}
+
+\section{Comptage à l'infini}
+\textit{Votre rapport doit contenir la topologie mise en oeuvre pour reproduire le comptage à l’infini en cas de changement de métrique. Il doit également indiquer le nombre de messages échangés par les routeurs (i.e. nombre d’itérations) depuis le changement de métrique et jusqu’à la nouvelle convergence.}\\
+
+\textit{Indiquer dans le rapport, sous forme de tableau, pour chacune de ces 2 autres simulations, les nouveaux coûts attribués aux liens ainsi que le nombre d’itérations résultant pour ces attributions}
+
+\section{Solution au problème de comptage à l’infini}
+\textit{Indiquez dans votre rapport le nom de cette solution et expliquez en maximum 5 lignes son principe de fonctionnement}\\
+
+\textit{Décrivez dans le rapport, en maximum 5 lignes, pourquoi le problème persiste dans ce cas
+exceptionnel}\\
+
+\textit{Proposez dans le rapport un mécanisme qui permettrait de résoudre ce nouveau
+problème}
+
+\section{Evaluation via génération de topologies}
+\textit{Le rapport doit contenir un graphique (ou un tableau) contenant les temps de convergence obtenus
+pour chaque nombre de liens.}
+
+\vspace{10px}
+\begin{center}
+\end{center}
+
+\topskip0pt
+\vspace*{\fill}
+
+\end{document}
