@@ -1,4 +1,4 @@
-# Projet Réseaux : simulation d'un protocle de routage à vecteur de distances
+# Projet Réseaux : simulation d'un protocole de routage à vecteur de distances
 Master en sciences informatiques. 
 UMons, Charleroi
 
