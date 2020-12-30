@@ -28,7 +28,6 @@ import reso.scheduler.AbstractScheduler;
 import reso.scheduler.Scheduler;
 import reso.utilities.FIBDumper;
 import reso.utilities.NetworkBuilder;
-import reso.data.*;
 import reso.utilities.NetworkGrapher;
 
 public class Demo {
@@ -66,7 +65,8 @@ public class Demo {
 
     public static void main(String[] args) {
         try {
-            String filename = "reso/data/topology.txt";
+            // change filename string according to project structure (where topology.txt is located)
+            String filename = "src/main/java/reso/data/topology-4nodes.txt";
             AbstractScheduler scheduler = new Scheduler();
             Network network = NetworkBuilder.loadTopology(filename, scheduler);
             setupRoutingProtocol(network, "R2");
