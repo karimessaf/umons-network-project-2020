@@ -57,7 +57,7 @@ public class Infinity {
     public static void main(String[] args) {
         try {
             // change filename string according to project structure (where topology.txt is located)
-            String filename = "src/main/java/reso/data/topology-4nodes.txt";
+            String filename = "src/main/java/reso/data/demo-graph.txt";
             AbstractScheduler scheduler = new Scheduler();
             Network network = NetworkBuilder.loadTopology(filename, scheduler);
             setupRoutingProtocol(network, "R2");
