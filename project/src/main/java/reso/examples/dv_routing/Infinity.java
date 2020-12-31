@@ -57,7 +57,7 @@ public class Infinity {
     public static void main(String[] args) {
         try {
             // change filename string according to project structure (where topology.txt is located)
-            String filename = "src/main/java/reso/data/demo-graph.txt";
+            String filename = "src/main/java/reso/data/infinity-graph.txt";
             AbstractScheduler scheduler = new Scheduler();
             Network network = NetworkBuilder.loadTopology(filename, scheduler);
             setupRoutingProtocol(network, "R2");
@@ -75,6 +75,8 @@ public class Infinity {
 
             // Display again forwarding table for each node
             FIBDumper.dumpForAllRouters(network);
+            for(Node n: network.getNodes())
+                System.out.println(n.getInterfaces());
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
