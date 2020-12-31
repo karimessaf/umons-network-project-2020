@@ -57,7 +57,7 @@ public class Infinity {
             String filename = "src/main/java/reso/data/infinity-graph.txt";
             AbstractScheduler scheduler = new Scheduler();
             Network network = NetworkBuilder.loadTopology(filename, scheduler);
-            setupRoutingProtocol(network, "R2");
+            setupRoutingProtocol(network, "X");
 
             // Run simulation -- first convergence
             scheduler.run();
@@ -66,15 +66,16 @@ public class Infinity {
             FIBDumper.dumpForAllRouters(network);
 
             // Change topology/nodes properties here ..
-            IPRouter router = (IPRouter) network.getNodeByName("R4");
-            router.getIPLayer().getInterfaceByName("eth0").setMetric(15);
-            setupRoutingProtocol(network, "R2");
+            IPRouter router = (IPRouter) network.getNodeByName("Y");
+            router.getIPLayer().getInterfaceByName("eth0").setMetric(60); // change metric to 60 for interface eth0 between X and Y
+            setupRoutingProtocol(network, "X");
+            scheduler.run();
 
             // Run simulation for 0.1 sec
-//            scheduler.runUntil(0.100);
+            scheduler.runUntil(0.100);
 
             // Display again forwarding table for each node
-//            FIBDumper.dumpForAllRouters(network);
+            FIBDumper.dumpForAllRouters(network);
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
