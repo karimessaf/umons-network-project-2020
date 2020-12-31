@@ -50,8 +50,7 @@ public class Network {
      * @param node the node to be added.
      * @throws Exception
      */
-    public void addNode(Node node)
-            throws Exception {
+    public void addNode(Node node) throws Exception {
         if (nodes.containsKey(node.name))
             throw new Exception("Node [" + node.name + "] already exists");
         nodes.put(node.name, node);

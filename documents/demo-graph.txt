@@ -17,7 +17,7 @@ router R4
     eth 192.168.3.2
     eth 192.168.3.3
 link R1 eth0 R2 eth0 5000000 10000
-        metric 1 2
+    metric 1 2
 link R1 eth1 R4 eth1 5000000 10000
     metric 4 6
 link R2 eth2 R4 eth2 5000000 10000

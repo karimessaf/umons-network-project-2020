@@ -17,8 +17,8 @@ router R4
 link R1 eth1 R4 eth1 5000000 10000
     metric 1
 link R1 eth0 R3 eth2 5000000 10000
-    metric 2
+    metric 1
 link R3 eth0 R4 eth0 5000000 10000
     metric 1
 link R2 eth0 R3 eth1 5000000 10000
-    metric 1
+    metric 5

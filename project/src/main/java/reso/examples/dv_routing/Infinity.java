@@ -12,10 +12,7 @@ package reso.examples.dv_routing;
 
 import reso.common.Network;
 import reso.common.Node;
-import reso.ip.IPAddress;
-import reso.ip.IPInterfaceAdapter;
-import reso.ip.IPLayer;
-import reso.ip.IPRouter;
+import reso.ip.*;
 import reso.scheduler.AbstractScheduler;
 import reso.scheduler.Scheduler;
 import reso.utilities.FIBDumper;
@@ -69,14 +66,15 @@ public class Infinity {
             FIBDumper.dumpForAllRouters(network);
 
             // Change topology/nodes properties here ..
+            IPRouter router = (IPRouter) network.getNodeByName("R4");
+            router.getIPLayer().getInterfaceByName("eth0").setMetric(15);
+            setupRoutingProtocol(network, "R2");
 
             // Run simulation for 0.1 sec
-            scheduler.runUntil(0.100);
+//            scheduler.runUntil(0.100);
 
             // Display again forwarding table for each node
-            FIBDumper.dumpForAllRouters(network);
-            for(Node n: network.getNodes())
-                System.out.println(n.getInterfaces());
+//            FIBDumper.dumpForAllRouters(network);
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
