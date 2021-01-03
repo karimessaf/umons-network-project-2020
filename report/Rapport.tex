@@ -44,13 +44,36 @@ Année académique 2020-2021
 \clearpage
 \setcounter{page}{1}
 
-\section{Comptage à l'infini}
-\textit{Votre rapport doit contenir la topologie mise en oeuvre pour reproduire le comptage à l’infini en cas de changement de métrique. Il doit également indiquer le nombre de messages échangés par les routeurs (i.e. nombre d’itérations) depuis le changement de métrique et jusqu’à la nouvelle convergence.}\\
+\section{Exercice 2.2}
+\begin{figure} [h!]
+\centering
+  \includegraphics[width=0.65\textwidth]{../documents/topology-figure.png}
+  \caption{Topologie de 4 nœuds et 5 liens}
+   \label{fig:topology}
+\end{figure}
+\begin{figure} [h!]
+\centering
+  \includegraphics[width=0.65\textwidth]{../documents/demo-table.png}
+  \caption{Tableau des routes calculées par les routeurs vers R2}
+   \label{fig:table}
+\end{figure}
+La Figure \ref{fig:topology} représente une topologie contenant 4 nœuds et 5 liens ainsi que les coûts et les interfaces par lesquelles ils sont connectés. La figure \ref{fig:table} quant à elle, représente les routes calculées à partir de chacun des routeurs vers une unique destination \textit{(R2)}.
 
-\textit{Indiquer dans le rapport, sous forme de tableau, pour chacune de ces 2 autres simulations, les nouveaux coûts attribués aux liens ainsi que le nombre d’itérations résultant pour ces attributions}
+\section{Exercice 2.3}
+\begin{figure} [h!]
+\centering
+  \includegraphics[width=0.65\textwidth]{../documents/infinity-table.png}
+  \caption{Tableau contenant 3 simulations différentes}
+   \label{fig:inf-table}
+\end{figure}
+\textit{Votre rapport doit contenir la topologie mise en oeuvre pour reproduire le comptage à l’infini en cas de changement de métrique}.\\
 
-\section{Solution au problème de comptage à l’infini}
-\textit{Indiquez dans votre rapport le nom de cette solution et expliquez en maximum 5 lignes son principe de fonctionnement}\\
+\textit{Il doit également indiquer le nombre de messages échangés par les routeurs (i.e. nombre d’itérations) depuis le changement de métrique et jusqu’à la nouvelle convergence.}\\
+
+Les 2 assignements de coûts de liens qui résultent en une convergence plus courte et une autre plus longue sont renseignés dans la Figure \ref{fig:inf-table}.
+
+\section{Exercice 2.4}
+La nom de la solution au comptage à l'infini vue dans le cours est \textit{Poisoned reverse}. Elle consiste à ne pas indiquer le coût réel vers la destination aux voisins (en leur envoyant $+\infty$ comme coût) qui passent par ce même nœud afin d'éviter le problème de comptage à l'infini. Dans la topologie donnée dans l'exercice 2.3, Y doit renseigner $+\infty$ à Z --- son voisin --- puisque celui-ci passe pas Y afin d'atteindre X ; sa destination.\\
 
 \textit{Décrivez dans le rapport, en maximum 5 lignes, pourquoi le problème persiste dans ce cas
 exceptionnel}\\
