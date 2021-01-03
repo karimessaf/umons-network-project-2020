@@ -57,20 +57,32 @@ Année académique 2020-2021
   \caption{Tableau des routes calculées par les routeurs vers R2}
    \label{fig:table}
 \end{figure}
+
 La Figure \ref{fig:topology} représente une topologie contenant 4 nœuds et 5 liens ainsi que les coûts et les interfaces par lesquelles ils sont connectés. La figure \ref{fig:table} quant à elle, représente les routes calculées à partir de chacun des routeurs vers une unique destination \textit{(R2)}.
 
+
+
 \section{Exercice 2.3}
+\begin{figure} [h!]
+\centering
+  \includegraphics[width=0.65\textwidth]{../documents/infinity-figure.png}
+  \caption{Topologie résultant en un comptage à l'infini}
+   \label{fig:inf-topo}
+\end{figure}
 \begin{figure} [h!]
 \centering
   \includegraphics[width=0.65\textwidth]{../documents/infinity-table.png}
   \caption{Tableau contenant 3 simulations différentes}
    \label{fig:inf-table}
 \end{figure}
-\textit{Votre rapport doit contenir la topologie mise en oeuvre pour reproduire le comptage à l’infini en cas de changement de métrique}.\\
+
+La Figure \ref{fig:inf-topo} représente la topologie résultant en un comptage à l'infini, le nombre 60 en rouge indique le changement nécessaire pour provoquer le comptage à l'infini.\\
 
 \textit{Il doit également indiquer le nombre de messages échangés par les routeurs (i.e. nombre d’itérations) depuis le changement de métrique et jusqu’à la nouvelle convergence.}\\
 
-Les 2 assignements de coûts de liens qui résultent en une convergence plus courte et une autre plus longue sont renseignés dans la Figure \ref{fig:inf-table}.
+Les 2 assignements de coûts de liens qui résultant en une convergence plus courte et une autre plus longue sont renseignés dans la Figure \ref{fig:inf-table}.
+
+
 
 \section{Exercice 2.4}
 La nom de la solution au comptage à l'infini vue dans le cours est \textit{Poisoned reverse}. Elle consiste à ne pas indiquer le coût réel vers la destination aux voisins (en leur envoyant $+\infty$ comme coût) qui passent par ce même nœud afin d'éviter le problème de comptage à l'infini. Dans la topologie donnée dans l'exercice 2.3, Y doit renseigner $+\infty$ à Z --- son voisin --- puisque celui-ci passe pas Y afin d'atteindre X ; sa destination.\\
@@ -80,6 +92,8 @@ exceptionnel}\\
 
 \textit{Proposez dans le rapport un mécanisme qui permettrait de résoudre ce nouveau
 problème}
+
+
 
 \section{Evaluation via génération de topologies}
 \textit{Le rapport doit contenir un graphique (ou un tableau) contenant les temps de convergence obtenus

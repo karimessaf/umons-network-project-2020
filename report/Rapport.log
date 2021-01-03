@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.12.30)  3 JAN 2021 13:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.12.30)  3 JAN 2021 14:04
 entering extended mode
 **./Rapport.tex
 (Rapport.tex
@@ -473,18 +473,27 @@ File: ../documents/demo-table.png Graphic file (type png)
 <use ../documents/demo-table.png>
 Package pdftex.def Info: ../documents/demo-table.png  used on input line 56.
 (pdftex.def)             Requested size: 305.33789pt x 94.15726pt.
-<../documents/infinity-table.png, id=40, 537.50812pt x 83.5622pt>
-File: ../documents/infinity-table.png Graphic file (type png)
-<use ../documents/infinity-table.png>
-Package pdftex.def Info: ../documents/infinity-table.png  used on input line 65
-.
-(pdftex.def)             Requested size: 305.33789pt x 47.469pt.
+<../documents/infinity-figure.png, id=40, 618.81187pt x 362.10281pt>
+File: ../documents/infinity-figure.png Graphic file (type png)
+<use ../documents/infinity-figure.png>
+Package pdftex.def Info: ../documents/infinity-figure.png  used on input line 6
+8.
+(pdftex.def)             Requested size: 305.33789pt x 178.6751pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+<../documents/infinity-table.png, id=41, 537.50812pt x 83.5622pt>
+File: ../documents/infinity-table.png Graphic file (type png)
+<use ../documents/infinity-table.png>
+Package pdftex.def Info: ../documents/infinity-table.png  used on input line 74
+.
+(pdftex.def)             Requested size: 305.33789pt x 47.469pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--70
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
 
@@ -498,49 +507,49 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.70 
+l.80 
       [1
 
  <../documents/topology-figure.png> <../documents/demo-table.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
 
  []
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 76.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 88.
 
 ("C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 76.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 88.
 
 
 ("C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
-
-Overfull \hbox (5.09055pt too wide) in paragraph at lines 79--80
+[2 <../documents/infinity-figure.png> <../documents/infinity-table.png>]
+Overfull \hbox (5.09055pt too wide) in paragraph at lines 91--92
 []\OT1/cmr/m/it/10.95 Decrivez dans le rap-port, en maxi-mum 5 lignes, pour-qu
 oi le probleme per-siste dans ce cas ex-cep-tion-nel 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--80
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
  []
 
-[2 <../documents/infinity-table.png>] [3] (Rapport.aux)
+[3] (Rapport.aux)
 Package rerunfilecheck Info: File `Rapport.out' has not changed.
 (rerunfilecheck)             Checksum: B81925B8A11FA63BCA462A94EF1ED827;221.
  ) 
 Here is how much of TeX's memory you used:
- 8511 strings out of 480224
- 124979 string characters out of 2889984
- 451160 words of memory out of 3000000
- 24910 multiletter control sequences out of 15000+200000
+ 8519 strings out of 480224
+ 125199 string characters out of 2889984
+ 450229 words of memory out of 3000000
+ 24916 multiletter control sequences out of 15000+200000
  542255 words of font info for 55 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,11n,72p,554b,424s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -551,9 +560,9 @@ pe1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/am
 sfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cms
 l10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/
 Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Rapport.pdf (5 pages, 182144 bytes).
+Output written on Rapport.pdf (5 pages, 203991 bytes).
 PDF statistics:
- 94 PDF objects out of 1000 (max. 8388607)
- 12 named destinations out of 1000 (max. 500000)
- 48 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 99 PDF objects out of 1000 (max. 8388607)
+ 13 named destinations out of 1000 (max. 500000)
+ 53 words of extra memory for PDF output out of 10000 (max. 10000000)
 
