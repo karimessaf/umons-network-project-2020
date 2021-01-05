@@ -30,6 +30,10 @@ public class DVRoutingProtocol
 
     public static final String PROTOCOL_NAME = "DV_ROUTING";
     public static final int IP_PROTO_DV = Datagram.allocateProtocolNumber(PROTOCOL_NAME);
+    public static int NUMBER_MESSAGE = 0;
+
+      /* Declare a variable for poison reverse */
+    private static final boolean poisonReverse = true;
 
 
     private final IPLayer ip;
@@ -106,8 +110,15 @@ public class DVRoutingProtocol
             DVMessage dvm = new DVMessage();
             int advCost = cost;
 
+              /* Implement poison reverse */
+            if (poisonReverse && (iface == oif))
+                advCost = Integer.MAX_VALUE;
+
             dvm.addDV(dst, advCost);
             iface.send(new Datagram(iface.getAddress(), IPAddress.BROADCAST, IP_PROTO_DV, 1, dvm), null);
+
+            /* Increment number of send messages */
+            NUMBER_MESSAGE++;
         }
     }
 
@@ -151,6 +162,7 @@ public class DVRoutingProtocol
 //        } catch (Exception e) {
 //            System.out.println(e);
 //        }
+
     }
 
     /**
