@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.12.30)  6 JAN 2021 22:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.12.30)  6 JAN 2021 22:44
 entering extended mode
-**./Rapport.tex
-(Rapport.tex
+**./report.tex
+(report.tex
 LaTeX2e <2020-10-01> patch level 2
 L3 programming layer <2020-10-05> xparse <2020-03-03>
 ("C:\Program Files\MiKTeX\tex/latex/base\article.cls"
@@ -348,8 +348,8 @@ File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
 \l__kernel_color_stack_int=\count284
 \l__pdf_internal_box=\box51
 )
-(Rapport.aux)
-\openout1 = `Rapport.aux'.
+(report.aux)
+\openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
@@ -437,9 +437,9 @@ LaTeX Info: Redefining \ref on input line 24.
 LaTeX Info: Redefining \pageref on input line 24.
 LaTeX Info: Redefining \nameref on input line 24.
 
-(Rapport.out) (Rapport.out)
+(report.out) (report.out)
 \@outlinefile=\write3
-\openout3 = `Rapport.out'.
+\openout3 = `report.out'.
 
 LaTeX Info: Redefining \degres on input line 24.
 LaTeX Info: Redefining \dots on input line 24.
@@ -452,9 +452,9 @@ Package french.ldf Warning: OT1 encoding should not be used for French.
 
 [1
 
-{C:/Users/Karim/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] (Rapport.toc)
+{C:/Users/Karim/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] (report.toc)
 \tf@toc=\write4
-\openout4 = `Rapport.toc'.
+\openout4 = `report.toc'.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
@@ -547,18 +547,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 102--103
 
  []
 
-[3 <../documents/problem-figure.png>] [4] (Rapport.aux)
-Package rerunfilecheck Info: File `Rapport.out' has not changed.
+[3 <../documents/problem-figure.png>] [4] (report.aux)
+Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: 4A92AD4C446DAEF91504FD02ECD9B591;235.
  ) 
 Here is how much of TeX's memory you used:
  8532 strings out of 480224
- 125460 string characters out of 2889984
- 451332 words of memory out of 3000000
+ 125441 string characters out of 2889984
+ 451327 words of memory out of 3000000
  24925 multiletter control sequences out of 15000+200000
  542255 words of font info for 55 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,11n,72p,589b,424s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 66i,11n,72p,588b,424s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Progra
 m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKT
 eX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX/fonts/ty
@@ -568,7 +568,7 @@ r10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/P
 rogram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files
 /MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/font
 s/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Rapport.pdf (6 pages, 248289 bytes).
+Output written on report.pdf (6 pages, 248289 bytes).
 PDF statistics:
  121 PDF objects out of 1000 (max. 8388607)
  16 named destinations out of 1000 (max. 500000)
