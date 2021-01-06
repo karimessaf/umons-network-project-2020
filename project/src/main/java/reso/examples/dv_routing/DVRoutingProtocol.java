@@ -32,7 +32,7 @@ public class DVRoutingProtocol
     public static final int IP_PROTO_DV = Datagram.allocateProtocolNumber(PROTOCOL_NAME);
     public static int NUMBER_MESSAGE = 0;
 
-      /* Declare a variable for poison reverse */
+    /* Declare a variable for poison reverse */
     private static final boolean poisonReverse = true;
 
 
@@ -110,7 +110,7 @@ public class DVRoutingProtocol
             DVMessage dvm = new DVMessage();
             int advCost = cost;
 
-              /* Implement poison reverse */
+            /* Implement poison reverse */
             if (poisonReverse && (iface == oif))
                 advCost = Integer.MAX_VALUE;
 

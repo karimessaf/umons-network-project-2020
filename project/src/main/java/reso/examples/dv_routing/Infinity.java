@@ -65,11 +65,11 @@ public class Infinity {
             // Display forwarding table for each node
             FIBDumper.dumpForAllRouters(network);
 
-            // Change topology/nodes properties here ..
-//            IPRouter routerY = (IPRouter) network.getNodeByName("Y");
-//            routerY.getIPLayer().getInterfaceByName("eth0").setMetric(60); // change metric to 70 for interface eth0 between X and Y
-//            setupRoutingProtocol(network, "X");
-//            scheduler.run();
+            /* metrics changes, this (without poison reverse) results in count-to-infinity */
+            IPRouter routerY = (IPRouter) network.getNodeByName("Y");
+            routerY.getIPLayer().getInterfaceByName("eth0").setMetric(60); // change metric to 70 for interface eth0 between X and Y
+            setupRoutingProtocol(network, "X");
+            scheduler.run();
 
             /* faster convergence: */
 //            IPRouter router = (IPRouter) network.getNodeByName("Y");
@@ -78,12 +78,12 @@ public class Infinity {
 //            scheduler.run();
 
             /* slower convergence: */
-            IPRouter routerY = (IPRouter) network.getNodeByName("Y");
-            routerY.getIPLayer().getInterfaceByName("eth0").setMetric(70); // change metric to 70 for interface eth0 between X and Y
-            IPRouter routerZ = (IPRouter) network.getNodeByName("Z");
-            routerZ.getIPLayer().getInterfaceByName("eth0").setMetric(60); // change metric to 60 for interface eth0 between Z and X
-            setupRoutingProtocol(network, "X");
-            scheduler.run();
+//            IPRouter routerY2 = (IPRouter) network.getNodeByName("Y");
+//            routerY2.getIPLayer().getInterfaceByName("eth0").setMetric(70); // change metric to 70 for interface eth0 between X and Y
+//            IPRouter routerZ = (IPRouter) network.getNodeByName("Z");
+//            routerZ.getIPLayer().getInterfaceByName("eth0").setMetric(60); // change metric to 60 for interface eth0 between Z and X
+//            setupRoutingProtocol(network, "X");
+//            scheduler.run();
 
             // Run simulation for 0.1 sec
             scheduler.runUntil(0.100);

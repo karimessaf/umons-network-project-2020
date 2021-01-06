@@ -55,7 +55,7 @@ public class Problem {
     public static void main(String[] args) {
         try {
             // change filename string according to project structure (where topology.txt is located)
-            String filename = "project/src/main/java/reso/data/problem-graph.txt";
+            String filename = "src/main/java/reso/data/problem-graph.txt";
             AbstractScheduler scheduler = new Scheduler();
             Network network = NetworkBuilder.loadTopology(filename, scheduler);
             setupRoutingProtocol(network, "A");
