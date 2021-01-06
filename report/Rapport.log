@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.12.30)  6 JAN 2021 22:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.12.30)  6 JAN 2021 22:33
 entering extended mode
 **./Rapport.tex
 (Rapport.tex
@@ -552,13 +552,13 @@ Package rerunfilecheck Info: File `Rapport.out' has not changed.
 (rerunfilecheck)             Checksum: 4A92AD4C446DAEF91504FD02ECD9B591;235.
  ) 
 Here is how much of TeX's memory you used:
- 8531 strings out of 480224
- 125447 string characters out of 2889984
- 450332 words of memory out of 3000000
- 24924 multiletter control sequences out of 15000+200000
+ 8532 strings out of 480224
+ 125460 string characters out of 2889984
+ 451332 words of memory out of 3000000
+ 24925 multiletter control sequences out of 15000+200000
  542255 words of font info for 55 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,11n,72p,573b,424s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 66i,11n,72p,589b,424s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Progra
 m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKT
 eX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX/fonts/ty
@@ -568,9 +568,9 @@ r10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/P
 rogram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files
 /MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/font
 s/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Rapport.pdf (6 pages, 248270 bytes).
+Output written on Rapport.pdf (6 pages, 250035 bytes).
 PDF statistics:
- 120 PDF objects out of 1000 (max. 8388607)
+ 121 PDF objects out of 1000 (max. 8388607)
  16 named destinations out of 1000 (max. 500000)
  66 words of extra memory for PDF output out of 10000 (max. 10000000)
 

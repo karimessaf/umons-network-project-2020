@@ -94,15 +94,14 @@ La nom de la solution au comptage à l'infini vue dans le cours est \textit{Pois
 \centering
   \includegraphics[width=0.65\textwidth]{../documents/problem-figure.png}
   \caption{Topologie où Poisoned reverse ne règle pas le problème de comptage à l'infini}
-   \label{fig:prob-fig}
+   \label{fig:prob-topology}
 \end{figure}
 
-La Figure \ref{fig:prob-fig} contient une topologie où, même avec application de la méthode Poison reverse, le problème de comptage à l'infini persiste. Dans cette topologie, le lien entre le routeur $A$ et le routeur $Y$ n'est plus fonctionnel. Il est donc impossible d'accéder au routeur $A$.\\
+La Figure \ref{fig:prob-topology} contient une topologie où, même avec application de la méthode Poison reverse, le problème de comptage à l'infini persiste. Dans cette topologie, le lien entre le routeur $A$ et le routeur $Y$ n'est plus fonctionnel. Il est donc impossible d'accéder au routeur $A$.\\
 
 Le problème de comptage à l'infini persiste car, malgré le fait que le routeur $Y$ informe $X$ et $Z$ que le coût vers $A$ est égal à l'infini, le premier routeur recevant cette information --- supposons dans ce cas qu'il s'agit de $Z$ --- remarque qu'il est toujours possible d'accéder au routeur $A$ via$ X$. Ceci est dû au fait que $X$ n'est pas au courant du changement des coûts des liens ($D_{y}(a)=+\infty$). Nous remarquerons donc un comptage à l'infini entre $X$ et $Z$, qui continuent d'incrémenter les coûts.\\
 
-\textit{Proposez dans le rapport un mécanisme qui permettrait de résoudre ce nouveau
-problème}
+Une solution à ce problème est appelée \textit{Split Horizon}. Elle consiste à interdire à un routeur de partager les coûts des liens dans la table de routage avec le routeur (interface) à partir duquel il a appris ceux-ci. Concrètement, dans la Figure \ref{fig:prob-topology}, quand le routeur $Y$ informe $Z$ --- et plus tard $X$ --- que le routeur $A$ n'est plus accessible, le routeur $Z$ n'enverra pas à $Y$ les coûts associés à ce routeur $Y$. De cette façon, $Y$ conservera $D_{y}(a)=+\infty$ et le comptage à l'infini sera évité.
 
 
 
