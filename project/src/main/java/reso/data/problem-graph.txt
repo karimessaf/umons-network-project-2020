@@ -1,0 +1,24 @@
+router X
+    lo 10.0.0.1
+    eth 192.168.0.1
+    eth 192.168.0.2
+router Y
+    lo 10.0.0.2
+    eth 192.168.1.1
+    eth 192.168.1.2
+    eth 192.168.4.2
+router Z
+    lo 10.0.0.3
+    eth 192.168.2.1
+    eth 192.168.2.2
+router A
+    lo 10.0.0.4
+    eth 192.168.4.1
+link X eth1 Y eth0 5000000 10000
+    metric 1
+link X eth0 Z eth0 5000000 10000
+    metric 1
+link Z eth1 Y eth1 5000000 10000
+    metric 1
+link Y eth2 A eth0 5000000 10000
+    metric 1
