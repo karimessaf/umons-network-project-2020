@@ -85,17 +85,28 @@ Les 2 assignements de coûts de liens qui résultant en une convergence plus cou
 
 
 \section{Exercice 2.4}
-La nom de la solution au comptage à l'infini vue dans le cours est \textit{Poisoned reverse}. Elle consiste à ne pas indiquer le coût réel vers la destination aux voisins (en leur envoyant $+\infty$ comme coût) qui passent par ce même nœud afin d'éviter le problème de comptage à l'infini. Dans la topologie donnée dans l'exercice 2.3, Y doit renseigner $+\infty$ à Z --- son voisin --- puisque celui-ci passe pas Y afin d'atteindre X ; sa destination.\\
+La nom de la solution au comptage à l'infini vue dans le cours est \textit{Poisoned reverse}. Elle consiste à ne pas indiquer le coût réel vers la destination aux voisins (en leur envoyant $+\infty$ comme coût) qui passent par ce même nœud afin d'éviter de progressivement incrémenter de 1 les coûts. Dans la topologie donnée dans l'exercice 2.3, $Y$ doit renseigner $+\infty$ à $Z$ --- son voisin --- puisque celui-ci passe pas $Y$ afin d'atteindre $X$ ; sa destination.\\
 
-\textit{Décrivez dans le rapport, en maximum 5 lignes, pourquoi le problème persiste dans ce cas
-exceptionnel}\\
+
+
+\section{Exercice 2.5}
+\begin{figure} [h!]
+\centering
+  \includegraphics[width=0.65\textwidth]{../documents/problem-figure.png}
+  \caption{Topologie où Poisoned reverse ne règle pas le problème de comptage à l'infini}
+   \label{fig:prob-fig}
+\end{figure}
+
+La Figure \ref{fig:prob-fig} contient une topologie où, même avec application de la méthode Poison reverse, le problème de comptage à l'infini persiste. Dans cette topologie, le lien entre le routeur $A$ et le routeur $Y$ n'est plus fonctionnel. Il est donc impossible d'accéder au routeur $A$.\\
+
+Le problème de comptage à l'infini persiste car, malgré le fait que le routeur $Y$ informe $X$ et $Z$ que le coût vers $A$ est égal à l'infini, le premier routeur recevant cette information --- supposons dans ce cas qu'il s'agit de $Z$ --- remarque qu'il est toujours possible d'accéder au routeur $A$ via$ X$. Ceci est dû au fait que $X$ n'est pas au courant du changement des coûts des liens ($D_{y}(a)=+\infty$). Nous remarquerons donc un comptage à l'infini entre $X$ et $Z$, qui continuent d'incrémenter les coûts.\\
 
 \textit{Proposez dans le rapport un mécanisme qui permettrait de résoudre ce nouveau
 problème}
 
 
 
-\section{Evaluation via génération de topologies}
+\section{Exercice 2.6}
 \textit{Le rapport doit contenir un graphique (ou un tableau) contenant les temps de convergence obtenus
 pour chaque nombre de liens.}
 
