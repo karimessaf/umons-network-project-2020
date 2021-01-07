@@ -78,7 +78,7 @@ La Figure \ref{fig:topology} représente une topologie contenant 4 nœuds et 5 l
 
 La Figure \ref{fig:inf-topo} représente la topologie résultant en un comptage à l'infini, le nombre 60 en rouge indique le changement nécessaire pour provoquer le comptage à l'infini.\\
 
-\textit{Il doit également indiquer le nombre de messages échangés par les routeurs (i.e. nombre d’itérations) depuis le changement de métrique et jusqu’à la nouvelle convergence.}\\
+Le nombre de messages échangés par les routeurs depuis le changement de métrique et jusqu'à la nouvelle convergence est de 24 messages.\\
 
 Les 2 assignements de coûts de liens qui résultant en une convergence plus courte et une autre plus longue sont renseignés dans la Figure \ref{fig:inf-table}.
 
@@ -106,9 +106,13 @@ Une solution à ce problème est appelée \textit{Split Horizon}. Elle consiste 
 
 
 \section{Exercice 2.6}
-\textit{Le rapport doit contenir un graphique (ou un tableau) contenant les temps de convergence obtenus
-pour chaque nombre de liens.}
-
+\begin{figure} [h!]
+\centering
+  \includegraphics[width=0.45\textwidth]{../documents/convergence-graphs.png}
+  \caption{Tableau de convergence avec différents liens}
+   \label{fig:graphs}
+\end{figure}
+La Figure \ref{fig:graphs} représente le temps convergence obtenus pour des topologies de 10, 20, 30, 50 et 100 liens.
 \vspace{10px}
 \begin{center}
 \end{center}

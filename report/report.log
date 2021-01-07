@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.12.30)  6 JAN 2021 22:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.12.30)  8 JAN 2021 00:24
 entering extended mode
 **./report.tex
 (report.tex
@@ -468,11 +468,11 @@ File: ../documents/topology-figure.png Graphic file (type png)
 Package pdftex.def Info: ../documents/topology-figure.png  used on input line 5
 0.
 (pdftex.def)             Requested size: 305.33789pt x 274.04129pt.
-<../documents/demo-table.png, id=42, 432.11438pt x 133.24782pt>
+<../documents/demo-table.png, id=42, 412.54124pt x 121.20282pt>
 File: ../documents/demo-table.png Graphic file (type png)
 <use ../documents/demo-table.png>
 Package pdftex.def Info: ../documents/demo-table.png  used on input line 56.
-(pdftex.def)             Requested size: 305.33789pt x 94.15726pt.
+(pdftex.def)             Requested size: 305.33789pt x 89.70717pt.
 <../documents/infinity-figure.png, id=45, 618.81187pt x 362.10281pt>
 File: ../documents/infinity-figure.png Graphic file (type png)
 <use ../documents/infinity-figure.png>
@@ -507,8 +507,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.80 
-      [1
+l.81 L
+      e nombre de messages échangés par les routeurs depuis le changement ...
+[1
 
  <../documents/topology-figure.png> <../documents/demo-table.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 81--82
@@ -530,14 +531,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
-[2 <../documents/infinity-figure.png> <../documents/infinity-table.png>]
-<../documents/problem-figure.png, id=70, 595.47469pt x 445.665pt>
+<../documents/problem-figure.png, id=61, 595.47469pt x 445.665pt>
 File: ../documents/problem-figure.png Graphic file (type png)
 <use ../documents/problem-figure.png>
 Package pdftex.def Info: ../documents/problem-figure.png  used on input line 95
 .
 (pdftex.def)             Requested size: 305.33789pt x 228.517pt.
-
+[2 <../documents/infinity-figure.png> <../documents/infinity-table.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
  []
@@ -547,18 +547,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 102--103
 
  []
 
-[3 <../documents/problem-figure.png>] [4] (report.aux)
+<../documents/convergence-graphs.png, id=73, 265.74281pt x 137.7647pt>
+File: ../documents/convergence-graphs.png Graphic file (type png)
+<use ../documents/convergence-graphs.png>
+Package pdftex.def Info: ../documents/convergence-graphs.png  used on input lin
+e 111.
+(pdftex.def)             Requested size: 211.38832pt x 109.58966pt.
+[3 <../documents/problem-figure.png>] [4 <../documents/convergence-graphs.png>]
+(report.aux)
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: 4A92AD4C446DAEF91504FD02ECD9B591;235.
  ) 
 Here is how much of TeX's memory you used:
- 8532 strings out of 480224
- 125441 string characters out of 2889984
- 451327 words of memory out of 3000000
- 24925 multiletter control sequences out of 15000+200000
+ 8540 strings out of 480224
+ 125593 string characters out of 2889984
+ 451394 words of memory out of 3000000
+ 24931 multiletter control sequences out of 15000+200000
  542255 words of font info for 55 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,11n,72p,588b,424s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 66i,12n,72p,588b,424s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Progra
 m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKT
 eX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX/fonts/ty
@@ -568,9 +575,9 @@ r10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/P
 rogram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files
 /MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/font
 s/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on report.pdf (6 pages, 248289 bytes).
+Output written on report.pdf (6 pages, 248918 bytes).
 PDF statistics:
- 121 PDF objects out of 1000 (max. 8388607)
- 16 named destinations out of 1000 (max. 500000)
- 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 125 PDF objects out of 1000 (max. 8388607)
+ 17 named destinations out of 1000 (max. 500000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 
