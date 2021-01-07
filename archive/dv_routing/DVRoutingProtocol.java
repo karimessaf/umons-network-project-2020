@@ -33,7 +33,7 @@ public class DVRoutingProtocol
     public static int NUMBER_MESSAGE = 0;
 
     /* Declare a variable for poison reverse */
-    private static final boolean poisonReverse = false;
+    private static final boolean poisonReverse = true;
 
 
     private final IPLayer ip;

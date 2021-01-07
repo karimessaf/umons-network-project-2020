@@ -1,4 +1,3 @@
-D:\Library\jdk-11.0.1\bin\java.exe "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.3\lib\idea_rt.jar=3318:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.3\bin" -Dfile.encoding=UTF-8 -classpath "C:\Users\Karim\Google Drive\UMons\Réseaux\Projet\project\target\classes;C:\Users\Karim\.m2\repository\junit\junit\4.13.1\junit-4.13.1.jar;C:\Users\Karim\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar" reso.examples.dv_routing.Infinity
 ------------------------------------------------------------
 58ms Z eth0 : src=192.168.0.1, dst=255.255.255.255,proto=1, payload=[ DV[192.168.0.2,0]]
 	old best ---
